@@ -1,1 +1,1 @@
-# -konomisystem
+# okonomisystem
