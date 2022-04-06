@@ -1,0 +1,289 @@
+* {
+    margin: 0%;
+    padding: 0%;  
+}
+
+/*-------------------------GRID SYSTEM--------------------------------*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 40px;
+}
+
+/*-------------------------HEADER--------------------------------*/
+
+.header {
+    background-color: #ADD8E6;
+    
+    grid-column: 1 / span 4;
+
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+
+}
+
+/*-------------------------NAVIGASJON--------------------------------*/
+
+.navigation {
+    background-color: #bebebe;
+
+    grid-row: 2 / span 2;
+
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+
+    border-radius: 4px;
+
+}
+
+.inntekt-overskrift {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.studielan-oversikt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/*--- KNAPPER ---*/
+
+.knapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-økonomi{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-reg-inntekt{
+    background-color: #bebebe;
+    font-size: 17px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-vis-inntekt{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-slett-inntekt{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-reg-studielan{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-vis-studielan{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-slett-studielan{
+    background-color: #bebebe;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    width: 150px;;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.nav-økonomi:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-reg-inntekt:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-vis-inntekt:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-slett-inntekt:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-reg-studielan:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-vis-studielan:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.nav-slett-studielan:hover{
+    box-shadow: inset 150px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+/*-------------------------HOVEDSIDE--------------------------------*/
+
+.main-content {
+    background-color: #FFF;
+
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 2;
+}
+
+/*--------------OVERSIKT----------------*/
+
+.oversikt-sparing {
+    background-color: aqua;
+}
+
+/*--------------STARTSIDE----------------*/
+
+.startside {
+    text-align: center;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.tabell-inntekt {
+    text-align: center;
+}
+
+/*--------------REG INNTEKT----------------*/
+.reg-inntekt {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.reg-år {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.reg-mnd {
+    margin-left: -26px;
+    margin-bottom: 5px;
+}
+
+.reg-netto {
+    margin-left: -61px;
+    margin-bottom: 5px;
+}
+
+/*--- KNAPPER ---*/
+
+.reg-knapper {
+    margin-bottom: 20px;
+}
+
+.reg-knapp-1 {
+    background-color: #ADD8E6;
+    font-size: 12px;
+    border: solid;
+    margin-top: 6px;
+    letter-spacing: 2px;
+    padding: 2px;
+    margin-left: 25px;
+}
+
+.reg-knapp-2 {
+    background-color: #ADD8E6;
+    font-size: 12px;
+    border: solid;
+    margin-top: 6px;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+.reg-knapp-1:hover{
+    cursor: pointer;
+}
+
+.reg-knapp-2:hover{
+    cursor: pointer;
+}
+
+
+/*-------------------------FOOTER--------------------------------*/
+
+.footer {
+    background-color: #ADD8E6;
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 4;
+}
+

@@ -1,0 +1,331 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+                        /* Responsivt design DESKTOP størrelse */
+/* ---------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1140px) {
+    
+.main-header{
+    background-color:#ADD8E6;
+    margin-bottom: 300px;
+    width: 100%;
+}
+
+.overskirft{
+    text-align: center;
+    color:#000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.main-body{
+    background-color:#FFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.knapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.body-link1{
+    background-color: #FFFF;
+    font-size: 25px;
+    border: none;
+    letter-spacing: 2px;
+    width: 400px;;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.body-link2{
+    background-color: #FFFF;
+    font-size: 25px;
+    border: none;
+    letter-spacing: 2px;
+    width: 400px;
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #ADD8E6;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.body-link1:hover{
+    box-shadow: inset 400px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+.body-link2:hover{
+    box-shadow: inset 400px 0 0 0 #ADD8E6;
+    cursor: pointer;
+}
+
+}
+
+                        /* Responsivt design IPAD størrelse */
+/* ---------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1139px) {
+    
+    .main-header{
+        background-color:#ADD8E6;
+        margin-bottom: 300px;
+        width: 100%;
+    }
+    
+    .overskirft{
+        text-align: center;
+        color:#000000;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .main-body{
+        background-color:#FFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* ---------------------- Knapper --------------------- */
+
+    .knapper {
+        margin-top: -150px;
+    }
+
+    .body-link1{
+        background-color: #FFFF;
+        font-size: 25px;
+        border: none;
+        letter-spacing: 2px;
+        width: 400px;;
+        height: 80px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #ADD8E6;
+        transition: ease-out 0.3s;
+        outline: none;
+        margin-bottom: 30px;
+    }
+    
+    .body-link2{
+        background-color: #FFFF;
+        font-size: 25px;
+        border: none;
+        letter-spacing: 2px;
+        width: 400px;
+        height: 80px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #ADD8E6;
+        transition: ease-out 0.3s;
+        outline: none;
+        margin-top: 30px;
+    }
+    
+    .body-link1:hover{
+        box-shadow: inset 400px 0 0 0 #ADD8E6;
+        cursor: pointer;
+    }
+    
+    .body-link2:hover{
+        box-shadow: inset 400px 0 0 0 #ADD8E6;
+        cursor: pointer;
+    }
+    
+    }
+
+                            /* Responsivt design DESKTOP størrelse */
+/* ---------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1140px) {
+    
+    .main-header{
+        background-color:#ADD8E6;
+        margin-bottom: 300px;
+        width: 100%;
+    }
+    
+    .overskirft{
+        text-align: center;
+        color:#000000;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .main-body{
+        background-color:#FFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .knapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .body-link1{
+        background-color: #FFFF;
+        font-size: 25px;
+        border: none;
+        letter-spacing: 2px;
+        width: 400px;;
+        height: 80px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #ADD8E6;
+        transition: ease-out 0.3s;
+        outline: none;
+    }
+    
+    .body-link2{
+        background-color: #FFFF;
+        font-size: 25px;
+        border: none;
+        letter-spacing: 2px;
+        width: 400px;
+        height: 80px;
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #ADD8E6;
+        transition: ease-out 0.3s;
+        outline: none;
+    }
+    
+    .body-link1:hover{
+        box-shadow: inset 400px 0 0 0 #ADD8E6;
+        cursor: pointer;
+    }
+    
+    .body-link2:hover{
+        box-shadow: inset 400px 0 0 0 #ADD8E6;
+        cursor: pointer;
+    }
+    
+    }
+    
+                            /* Responsivt design stor TELEFON størrelse */
+    /* ---------------------------------------------------------------------------------------------------------- */
+    
+    @media only screen and (max-width: 600px) {
+        
+        .main-header{
+            background-color:#ADD8E6;
+            margin-bottom: 300px;
+            width: 100%;
+        }
+        
+        .overskirft{
+            text-align: center;
+            color:#000000;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        
+        .main-body{
+            background-color:#FFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* ---------------------- Knapper --------------------- */
+    
+        .knapper {
+            margin-top: -150px;
+        }
+    
+        .body-link1{
+            background-color: #ADD8E6;
+            font-size: 25px;
+            border: none;
+            letter-spacing: 2px;
+            width: 400px;;
+            height: 80px;
+            border-radius: 4px;
+            outline: none;
+            margin-bottom: 30px;
+        }
+        
+        .body-link2{
+            background-color: #ADD8E6;
+            font-size: 25px;
+            border: none;
+            letter-spacing: 2px;
+            width: 400px;
+            height: 80px;
+            border-radius: 4px;
+            outline: none;
+            margin-top: 30px;
+        }
+        
+        
+        }
+
+                            /* Responsivt design liten TELEFON størrelse */
+    /* ---------------------------------------------------------------------------------------------------------- */
+    
+    @media only screen and (max-width: 350px) {
+        
+        .main-header{
+            background-color:#ADD8E6;
+            margin-bottom: 300px;
+            width: 100%;
+        }
+        
+        .overskirft{
+            text-align: center;
+            color:#000000;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        
+        .main-body{
+            background-color:#FFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* ---------------------- Knapper --------------------- */
+    
+        .knapper {
+            margin-top: -250px;
+        }
+    
+        .body-link1{
+            background-color: #ADD8E6;
+            font-size: 25px;
+            border: none;
+            letter-spacing: 2px;
+            width: 400px;;
+            height: 80px;
+            border-radius: 4px;
+            outline: none;
+            margin-bottom: 30px;
+        }
+        
+        .body-link2{
+            background-color: #ADD8E6;
+            font-size: 25px;
+            border: none;
+            letter-spacing: 2px;
+            width: 400px;
+            height: 80px;
+            border-radius: 4px;
+            outline: none;
+            margin-top: 30px;
+        }
+        
+        
+        }
