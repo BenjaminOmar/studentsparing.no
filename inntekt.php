@@ -11,7 +11,7 @@
 <div class="container">
     <header class="header">
         <div>
-            <h1>Økonomisystem</h1>
+            <h1>Inntekt</h1>
         </div> 
     </header>
     <nav class="navigation">
@@ -21,16 +21,29 @@
                     <button class="meny">Meny</button>
                 </a>
             </div>
-            <div class="inntekt-overskrift">
-                Inntekt
-            </div>
+            <div class="inntekt-overskrift">Inntekt</div>
             <div>
-                <a href="inntekt.php">
-                    <button class="fortsett">Fortsett</button>
+                <a href="reg-inntekt.php">
+                    <button class="nav-reg-inntekt">Registrer</button>
                 </a>
             </div>
+            <div>
+                <a href="vis-inntekt.php">
+                    <button class="nav-vis-inntekt">Vis</button>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <button class="nav-rediger-inntekt">Endre rater</button>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <button class="nav-slett-inntekt">Slett</button>
+                </a>
             </div>
 
+        </div>
     </nav>
 
     <section class="main-content">
