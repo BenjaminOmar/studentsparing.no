@@ -1,3 +1,13 @@
+<?php
+session_start();
+$innloggetBruker=$_SESSION["brukernavn"];
+
+if(!$innloggetBruker) /*bruker er ikke innlogget */
+    {
+        print("<meta http-equiv='refresh' content='0;url=innlogging.php'>");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +28,7 @@
         <div class="knapper">
         <div>
                 <a href="økonomi.php">
-                    <button class="nav-økonomi">Meny</button>
+                    <button class="nav-vis">Meny</button>
                 </a>
             </div>
             <div class="inntekt-overskrift">Inntekt</div>
@@ -35,22 +45,6 @@
             <div>
                 <a href="vis-inntekt.php">
                     <button class="nav-slett-inntekt">Slett</button>
-                </a>
-            </div>
-            <div class="studielan-oversikt">Studielån</div>
-            <div>
-                <a href="reg-studielan.php">
-                    <button class="nav-reg-studielan">Registrer</button>
-                </a>
-            </div>
-            <div>
-                <a href="vis-studielan.php">
-                        <button class="nav-vis-studielan">Vis Lån</button>
-                </a>
-            </div>
-            <div>
-                <a href="vis-studielan.php">
-                        <button class="nav-slett-studielan">Slett</button>
                 </a>
             </div>
         </div>

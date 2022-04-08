@@ -1,3 +1,13 @@
+<?php
+session_start();
+$innloggetBruker=$_SESSION["brukernavn"];
+
+if(!$innloggetBruker) /*bruker er ikke innlogget */
+    {
+        print("<meta http-equiv='refresh' content='0;url=innlogging.php'>");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +28,7 @@
         <div class="knapper">
             <div>
                 <a href="økonomi.php">
-                    <button class="meny">Meny</button>
+                    <button class="nav-inntekt">Meny</button>
                 </a>
             </div>
             <div class="inntekt-overskrift">Inntekt</div>

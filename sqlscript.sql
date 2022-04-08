@@ -5,8 +5,6 @@ DROP TABLE IF EXISTS bruker;
 CREATE TABLE bruker (
     brukernavn varchar(40) NOT NULL UNIQUE,
     passord varchar(60),
-    Fornavn varchar(40),
-    Etternavn varchar(40),
     PRIMARY KEY(brukernavn)
     );
 

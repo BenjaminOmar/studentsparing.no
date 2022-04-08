@@ -1,3 +1,13 @@
+<?php
+session_start();
+$innloggetBruker=$_SESSION["brukernavn"];
+
+if(!$innloggetBruker) /*bruker er ikke innlogget */
+    {
+        print("<meta http-equiv='refresh' content='0;url=innlogging.php'>");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +28,7 @@
         <div class="knapper">
         <div>
                 <a href="økonomi.php">
-                    <button class="nav-økonomi">Meny</button>
+                    <button class="nav-reg">Meny</button>
                 </a>
             </div>
             <div class="inntekt-overskrift">Inntekt</div>
@@ -37,23 +47,6 @@
                     <button class="nav-slett-inntekt">Slett</button>
                 </a>
             </div>
-            <div class="studielan-oversikt">Studielån</div>
-            <div>
-                <a href="reg-studielan.php">
-                    <button class="nav-reg-studielan">Registrer</button>
-                </a>
-            </div>
-            <div>
-                <a href="vis-studielan.php">
-                        <button class="nav-vis-studielan">Vis Lån</button>
-                </a>
-            </div>
-            <div>
-                <a href="vis-studielan.php">
-                        <button class="nav-slett-studielan">Slett</button>
-                </a>
-            </div>
-
         </div>
     </nav>
 
@@ -94,7 +87,7 @@ if (isset($_POST ["registrerinntektKnapp"]))
     {
         include("db-tilkobling.php");
 
-        $sqlSetning="SELECT * FROM inntekt WHERE år='$år' AND måned='$måned';";
+        $sqlSetning="SELECT * FROM inntekt WHERE år='$år' AND måned='$måned' AND brukernavn='$innloggetBruker';";
         $sqlResultat=mysqli_query($db, $sqlSetning) or die ("Ikke mulig å hente data fra databasen");
         $antallRader=mysqli_num_rows($sqlResultat);
 
@@ -104,9 +97,9 @@ if (isset($_POST ["registrerinntektKnapp"]))
         }
         else
         {
-            $sqlSetning="INSERT INTO inntekt VALUES('$år', '$måned', '$nettoinntekt', 3500, 750, 300, 300, 5000, 2500, 1500, '$nettoinntekt'-3500-750-300-300-5000-2500-1500);";
+            $sqlSetning="INSERT INTO inntekt VALUES('$år', '$måned', '$innloggetBruker', '$nettoinntekt', 3500, 750, 300, 300, 5000, 2500, 1500, '$nettoinntekt'-3500-750-300-300-5000-2500-1500);";
             $sqlResultat=mysqli_query($db, $sqlSetning) or die ("Ikke mulig å registrere data i databasen");
-            print ("Følgende inntekt er nå registrert: $år $måned: $nettoinntekt kr.");
+            print ("Følgende inntekt er nå registrert for $måned $år: $nettoinntekt kr.");
         }
 
     }
