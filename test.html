@@ -7,18 +7,37 @@
     <title></title>
     <link rel="stylesheet" href="style-ø.css">
 </head>
-<body>
-<div class="container">
-    <header class="header">
-    <div class="h-container">
-        <div>
-            <h1 class="h-logo">Økonomisystem</h1>
-        </div>
-        <div class="h-hjem">
-            <a href="økonomi.php">Hjem</a>
-        </div>
-        <div>
-            <a href="inntekt.php">Inntekt</a>
+<section class="main-content">
+    <div class="startside">
+        <div class="m-container">
+            <div class="m-registrer" onclick="location.href='reg-inntekt.php';">
+                <div>
+                    <div>
+                        <h3>Registrering av inntekt</h3>
+                    </div>
+                    <div>
+                        <p class="m-registrer-text">
+                            Her registrerer du inntekten din
+                        </p>
+                    </div>
+                    <div>
+                        <img src="bilder/registrering-icon.svg" class="m-registrer-bilde" alt="Icon av registrering">
+                    </div>
+                </div>
+            </div>
+            <div class="m-vis" onclick="location.href='vis-inntekt.php';">
+                <div>
+                    <h3>Vis din inntekt</h3>
+                </div>
+                <div>
+                    <p class="m-vis-text">Her vises inntekten din</p>
+                </div>
+                <div>
+                    <img src="bilder/vis-inntekt-ikon.svg" class="m-vis-bilde" alt="Icon av visning">
+                </div>
+            </div>
         </div>
     </div>
-    </header>
+</section>
+</body>
+</html>
