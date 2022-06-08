@@ -1,7 +1,30 @@
 * {
     margin: 0%;
-    padding: 0%;  
+    padding: 0%;
+
 }
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 
 /*-------------------------GRID SYSTEM--------------------------------*/
 
@@ -138,12 +161,11 @@
 .m-vis {
     background-color:#f1f1f1;
     border: 1px solid;
-    padding-top: 28px;
+    padding-top: 25px;
     padding-left: 72px;
     padding-right: 72px;
-    padding-bottom: 48px;
+    padding-bottom: 45px;
 
-    margin-right: 50px;
     border-radius: 5px;
 }
 
@@ -225,61 +247,231 @@
 
 
 /*-------------------------MAIN CONTENT--------------------------------*/
+.reg-inntekt-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 /*--------------REG INNTEKT----------------*/
+
 .reg-inntekt {
-    text-align: center;
-    margin-top: 130px;
+    font-size: x-large;
 }
 
-.reg-år {
-    margin-top: 10px;
+/* Registrer år */
+
+.reg-år-text {
+    font-size: large;
+    
+    margin-left: -230px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
-.reg-mnd {
-    margin-left: -26px;
+.reg-år-boks {
+    font-size: large;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+
+}
+
+.reg-år-boks:hover {
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* Registrer måned */
+
+.reg-mnd-text {
+    font-size: large;
+    
+    margin-left: -200px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
-.reg-netto {
-    margin-left: -61px;
+.reg-mnd-boks {
+    font-size: large;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 110px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.reg-mnd-boks:hover {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* registrer Netto */
+
+.reg-netto-text {
+    font-size: large;
+    
+    margin-left: -160px;
+    margin-top: 30px;
     margin-bottom: 5px;
+}
+
+.reg-netto-boks {
+    font-size: large;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+}
+
+.reg-netto-boks:hover {
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 /*--- KNAPPER ---*/
 
 .reg-knapper {
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 0px;
 }
 
-.reg-knapp-1 {
-    background-color: #ADD8E6;
-    font-size: 12px;
-    border: solid;
-    margin-top: 6px;
-    letter-spacing: 2px;
-    padding: 2px;
-    margin-left: 25px;
-}
+.reg-knapp {
 
-.reg-knapp-2 {
-    background-color: #ADD8E6;
-    font-size: 12px;
-    border: solid;
-    margin-top: 6px;
-    letter-spacing: 2px;
-    padding: 2px;
-}
+      align-items: center;
+      background-color: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+    }
+    
+    .reg-knapp,
+    .reg-knapp:focus {
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    
+    .reg-knapp:hover {
+      transform: translateY(-1px);
+    }
+    
+    .reg-knapp:active {
+      background-color: #F0F0F1;
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: translateY(0);
+    }
 
-.reg-knapp-1:hover{
+.nullstill-knapp {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .nullstill-knapp,
+  .nullstill-knapp:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .nullstill-knapp:hover {
+    transform: translateY(-1px);
+  }
+  
+  .nullstill-knapp:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+.reg-inntekt-frafør {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.reg-knapp-2:hover{
-    cursor: pointer;
+.reg-inntekt-svar {
+    text-align: center;
+    margin-top: 50px;
 }
 
+.reg-inntekt-svar-knapp {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+}
+  .reg-inntekt-svar-knapp:hover {
+    color: rgba(0, 0, 0, 0.85);
+  }
+  
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/

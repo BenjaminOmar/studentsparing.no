@@ -24,6 +24,9 @@ if(!$innloggetBruker) /*bruker er ikke innlogget */
         <div>
             <h1 class="h-logo">Økonomisystem</h1>
         </div>
+        <div>
+            <a href="økonomi.php">hjem</a>
+        </div>
         <div class="h-hjem">
             <a href="#">oversikt</a>
         </div>

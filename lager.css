@@ -1,0 +1,210 @@
+/*--------------------------- reg-inntekt.php side------------------------------*/
+
+
+
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+.reg-inntekt-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/*--------------REG INNTEKT----------------*/
+
+.reg-inntekt {
+    font-size: x-large;
+}
+
+/* Registrer år */
+
+.reg-år-text {
+    font-size: large;
+    
+    margin-left: -230px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.reg-år-boks {
+    font-size: large;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+
+}
+
+.reg-år-boks:hover {
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* Registrer måned */
+
+.reg-mnd-text {
+    font-size: large;
+    
+    margin-left: -200px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.reg-mnd-boks {
+    font-size: large;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 230px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.reg-mnd-boks:hover {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* registrer Netto */
+
+.reg-netto-text {
+    font-size: large;
+    
+    margin-left: -160px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.reg-netto-boks {
+    font-size: large;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(0.5, 0.5, 0.5, 0.5);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+}
+
+.reg-netto-boks:hover {
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/*--- KNAPPER ---*/
+
+.reg-knapper {
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.reg-knapp {
+
+      align-items: center;
+      background-color: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+    }
+    
+    .reg-knapp,
+    .reg-knapp:focus {
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    
+    .reg-knapp:hover {
+      transform: translateY(-1px);
+    }
+    
+    .reg-knapp:active {
+      background-color: #F0F0F1;
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: translateY(0);
+    }
+
+.nullstill-knapp {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .nullstill-knapp,
+  .nullstill-knapp:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .nullstill-knapp:hover {
+    transform: translateY(-1px);
+  }
+  
+  .nullstill-knapp:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
