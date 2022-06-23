@@ -33,7 +33,7 @@ p {
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 80px 1fr 80px;
 }
 
 /*-------------------------HEADER--------------------------------*/
@@ -57,7 +57,7 @@ p {
     justify-content: left;
     align-items: center;
     padding-top: 0px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 40px;
 
 }
@@ -69,28 +69,34 @@ p {
 /* -- knapper -- */
 
 .h-hjem {
-    margin-left: 100px;
-    margin-right: 10px;
+    margin-left: 110px;
+    margin-right: 50px;
     
     text-decoration: none;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #222024;
+
+    display: inline-block;
+    position: relative;
 }
 
-.h-hjem::after {
+.h-hjem:after {
     content: '';
     position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: lightblue;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
+    background-color: #00bfff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.h-hjem:hover::after,
-.h-hjem:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
+.h-hjem:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .h-oversikt {
@@ -98,9 +104,33 @@ p {
     padding-right: 0px;
 
     margin-left: 0px;
-    margin-right: 10px;
+    margin-right: 50px;
 
     text-decoration: none;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #222024;
+
+    display: inline-block;
+    position: relative;
+}
+
+.h-oversikt:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00bfff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.h-oversikt:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .h-registrering {
@@ -111,6 +141,30 @@ p {
     margin-right: 0px;
 
     text-decoration: none;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #222024;
+
+    display: inline-block;
+    position: relative;
+}
+
+.h-registrering:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00bfff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.h-registrering:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 
