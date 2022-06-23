@@ -22,16 +22,16 @@ if(!$innloggetBruker) /*bruker er ikke innlogget */
     <header class="header">
     <div class="h-container">
         <div>
-            <h1 class="h-logo">Økonomisystem</h1>
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
         </div>
         <div>
-            <a href="økonomi.php">hjem</a>
-        </div>
-        <div class="h-hjem">
-            <a href="#">oversikt</a>
+            <a href="økonomi.php" class="h-hjem">hjem</a>
         </div>
         <div>
-            <a href="#">registrering</a>
+            <a href="#" class="h-oversikt">oversikt</a>
+        </div>
+        <div>
+            <a href="#" class="h-registrering">registrering</a>
         </div>
     </div>
     </header>

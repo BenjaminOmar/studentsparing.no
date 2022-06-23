@@ -33,7 +33,7 @@ p {
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 89px 1fr 80px;
+    grid-template-rows: 100px 1fr 80px;
 }
 
 /*-------------------------HEADER--------------------------------*/
@@ -54,22 +54,67 @@ p {
 /*------ HEADER INNHOLD ------*/
 .h-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 0px;
+    margin-top: 30px;
+    margin-left: 40px;
 
 }
 
 .h-logo {
-    color: lightgray;
-    margin-right: 50px;
-    margin-left:-40vw;
+    cursor: pointer;
 }
 
+/* -- knapper -- */
+
 .h-hjem {
-    padding-left: 10px;
-    padding-right: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    
+    text-decoration: none;
 }
+
+.h-hjem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: lightblue;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.h-hjem:hover::after,
+.h-hjem:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+.h-oversikt {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-left: 0px;
+    margin-right: 10px;
+
+    text-decoration: none;
+}
+
+.h-registrering {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    text-decoration: none;
+}
+
+
+   
 
 
 
@@ -82,7 +127,7 @@ p {
     grid-row: 2 / span 1;
     grid-column: 1 / span 3;
     
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 /*-------------------------FOOTER--------------------------------*/
@@ -113,10 +158,10 @@ p {
 
 /*-------------------------MAIN CONTENT--------------------------------*/
 
-/*--------------OVERSIKT----------------*/
+/*--------------OVERSIKT inntekt----------------*/
 
-.m-container {
-    padding-top: 70px;
+.m-container-inntekt {
+    margin-top: 50px;
 
     display: flex;
     flex-direction: row;
@@ -124,10 +169,10 @@ p {
     align-items: center;
 }
 
-.m-registrer {
+.m-i-registrer {
     background-color:#f1f1f1;
     border: 1px solid;
-    padding-top: 30px;
+    padding-top: 39px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 50px;
@@ -136,29 +181,29 @@ p {
     border-radius: 5px;
 }
 
-.m-registrer:hover {
+.m-i-registrer:hover {
     cursor: pointer;
     transition-timing-function: ease-in-out;
     transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.m-registrer-overskrift {
+.m-i-registrer-overskrift {
     text-decoration: none;
     text-align: center;
 }
 
-.m-registrer-text {
+.m-i-registrer-text {
     padding-top: 10px;
     text-align: center;
 }
 
-.m-registrer-bilde {
+.m-i-registrer-bilde {
     margin-top: 10px;
     margin-left: 30px;
 }
 
-.m-vis {
+.m-i-vis {
     background-color:#f1f1f1;
     border: 1px solid;
     padding-top: 25px;
@@ -169,29 +214,120 @@ p {
     border-radius: 5px;
 }
 
-.m-vis:hover {
+.m-i-vis:hover {
     cursor: pointer;
     transition-timing-function: ease-in-out;
     transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.m-vis-overskrift:link {
+.m-i-vis-overskrift:link {
     text-decoration: none;
     text-align: center;
 }
 
-.m-vis-text {
+.m-i-vis-text {
     padding-top: 10px;
     text-align: center;
 }
 
-.m-registrer-bilde {
+.m-i-registrer-bilde {
     margin-top: 10px;
     margin-left: 30px;
 }
 
-.m-vis-bilde {
+.m-i-vis-bilde {
+    margin-top: 10px;
+}
+
+/*--------------OVERSIKT lån----------------*/
+
+.m-container-lan {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 65px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-l-registrer {
+    background-color:#f1f1f1;
+    border: 1px solid;
+    padding-top: 39px;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 55px;
+
+    margin-right: 50px;
+    margin-left: -14px;
+    border-radius: 5px;
+}
+
+.m-l-registrer:hover {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.m-l-registrer-overskrift {
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-l-registrer-text {
+    padding-top: 10px;
+    text-align: center;
+
+    margin-bottom: 2px;
+}
+
+.m-l-registrer-bilde {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 16px;
+
+    height: 120px;
+}
+
+.m-l-vis {
+    background-color:#f1f1f1;
+    border: 1px solid;
+    padding-top: 40px;
+    padding-left: 91px;
+    padding-right: 89px;
+    padding-bottom: 65px;
+
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.m-l-vis:hover {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.m-l-vis-overskrift:link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-l-vis-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.m-l-registrer-bilde {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.m-l-vis-bilde {
     margin-top: 10px;
 }
 
