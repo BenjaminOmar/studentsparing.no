@@ -4,103 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Økonomisystem</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <header class="header">
-    <div class="h-container">
-        <div>
-            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
-        </div>
-        <div>
-            <a href="økonomi.php" class="h-hjem">hjem</a>
-        </div>
-        <div>
-            <a href="#" class="h-oversikt">oversikt</a>
-        </div>
-        <div>
-            <a href="#" class="h-registrering">registrering</a>
-        </div>
+    <div class="m-container-login">
+            <div class="m-login" onclick="location.href='innlogging.php';">
+                <div>
+                    <h3>Innlogging</h3>
+                </div>
+                <div>
+                    <p class="m-login-text">Trykk her for å logge inn på din eksisterende bruker</p>
+                </div>
+                <div>
+                    <img src="bilder/vis-inntekt-ikon.svg" class="m-login-bilde" alt="Icon av visning">
+                </div>
+            </div>
+            <div class="m-registrer" onclick="location.href='reg-bruker.php';">
+                <div>
+                    <div>
+                        <h3>Registrering av bruker</h3>
+                    </div>
+                    <div>
+                        <p class="m-registrer-text">
+                            Trykk her for å lage ny bruker hos oss :)
+                        </p>
+                    </div>
+                    <div>
+                        <img src="bilder/registrering-icon.svg" class="m-registrer-bilde" alt="Icon av registrering">
+                    </div>
+                </div>
+            </div>
     </div>
-    </header>
-    <section class="main-content">
-        <div class="startside">
-            <div class="m-container-inntekt">
-                <div class="m-i-registrer" onclick="location.href='reg-inntekt.php';">
-                    <div>
-                        <div>
-                            <h3 class="m-i-registrer-overskrift">Registrering av inntekt</h3>
-                        </div>
-                        <div>
-                            <p class="m-i-registrer-text">
-                                Her registrerer du inntekten din
-                            </p>
-                        </div>
-                        <div>
-                            <img src="bilder/registrering-icon.svg" class="m-i-registrer-bilde" alt="Icon av registrering">
-                        </div>
-                    </div>
-                </div>
-                <div class="m-i-vis" onclick="location.href='vis-inntekt.php';">
-                    <div>
-                        <h3>Vis din inntekt</h3>
-                    </div>
-                    <div>
-                        <p class="m-i-vis-text">Her vises inntekten din</p>
-                    </div>
-                    <div>
-                        <img src="bilder/vis-inntekt-ikon.svg" class="m-i-vis-bilde" alt="Icon av visning">
-                    </div>
-                </div>
-            </div>
-    
-            <div class="m-container-lan">
-                <div class="m-l-registrer" onclick="location.href='reg-inntekt.php';">
-                    <div>
-                        <div>
-                            <h3>Registrering av lån</h3>
-                        </div>
-                        <div>
-                            <p class="m-l-registrer-text">
-                                Her registrerer du dine lån
-                            </p>
-                        </div>
-                        <div>
-                            <img src="bilder/reg-slan-icon.svg" class="m-l-registrer-bilde" alt="Icon av registrering">
-                        </div>
-                    </div>
-                </div>
-                <div class="m-l-vis" onclick="location.href='vis-inntekt.php';">
-                    <div>
-                        <h3>Vis dine lån</h3>
-                    </div>
-                    <div>
-                        <p class="m-l-vis-text">Her vises dine lån</p>
-                    </div>
-                    <div>
-                        <img src="bilder/vis-slan-icon.svg" class="m-l-vis-bilde" alt="Icon av visning">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</body>
 
-    <footer class="footer">
-        <div>
-            <div>
-            <a href="utlogging.php">
-                    <button class="utlogging">Logg ut</button>
-                </a>
-            </div>
-        </div>
-    </footer>
-</div>
-
-    
-    </body>
-    </html>

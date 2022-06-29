@@ -1,9 +1,9 @@
 <?php
-include("header.php");
+include("header-u.php");
 ?>
 
-<section class="main-content">
-    <div class="startside">
+<section class="main-content-u">
+    <div class="startside-u">
         <div class="m-container-inntekt">
             <div class="m-i-registrer" onclick="location.href='reg-inntekt.php';">
                 <div>
@@ -68,5 +68,5 @@ include("header.php");
 </html>
 
 <?php
-    include("footer.php");
+    include("footer-u.php");
 ?>

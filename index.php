@@ -1,11 +1,7 @@
 <?php
-session_start();
-$innloggetBruker=$_SESSION["brukernavn"];
+/* trenger php tagger her for sjekk */
 
-if(!$innloggetBruker) /*bruker er ikke innlogget */
-    {
-        print("<meta http-equiv='refresh' content='0;url=innlogging.php'>");
-    }
+include("header-i.php");
 ?>
 
 <!DOCTYPE html>
@@ -17,28 +13,37 @@ if(!$innloggetBruker) /*bruker er ikke innlogget */
     <title>Økonomisystem</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header class="main-header">
-    <h1 class="overskirft">
-        Økonomisystem
-    </h1>
-</header>
 <body>
-    <section class="main-body">
-<div class="knapper">
-    <div>
-        <a href="aksjer.php">
-            <button class="body-link1">Aksjer</button>
-        </a>
+    <div class="m-container-login">
+            <div class="m-login" onclick="location.href='innlogging.php';">
+                <div>
+                    <h3>Innlogging</h3>
+                </div>
+                <div>
+                    <p class="m-login-text">Trykk her for å logge inn på din eksisterende bruker</p>
+                </div>
+                <div>
+                    <img src="bilder/vis-inntekt-ikon.svg" class="m-login-bilde" alt="Icon av visning">
+                </div>
+            </div>
+            <div class="m-registrer" onclick="location.href='reg-bruker.php';">
+                <div>
+                    <div>
+                        <h3>Registrering av bruker</h3>
+                    </div>
+                    <div>
+                        <p class="m-registrer-text">
+                            Trykk her for å lage ny bruker hos oss :)
+                        </p>
+                    </div>
+                    <div>
+                        <img src="bilder/registrering-icon.svg" class="m-registrer-bilde" alt="Icon av registrering">
+                    </div>
+                </div>
+            </div>
     </div>
-
-    <div>
-        <a href="økonomi.php">
-            <button class="body-link2">Økonomi</button>
-        </a>
-    </div>
-</div>
-
-    </section>
-    
 </body>
-</html>
+
+<?php
+include("footer-i.php");
+?>

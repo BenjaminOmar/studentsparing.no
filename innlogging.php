@@ -11,9 +11,6 @@
   <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
 </form>
 
-Ny bruker ? <br />
-<a href="reg-bruker.php">Registrer deg her</a> <br /> <br />
-
 <?php
   if (isset($_POST ["logginnKnapp"]))
     {
