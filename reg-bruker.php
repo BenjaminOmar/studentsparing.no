@@ -11,14 +11,20 @@
 </body>
 </html>
 
-<h3>Registrer bruker </h3>
-
-<form action="" id="registrerBrukerSkjema" name="registrerBrukerSkjema" method="post">
-  Brukernavn <input name="brukernavn" type="text" id="brukernavn" required> <br />
-  Passord <input name="passord" type="password" id="passord" required>  <br />
-  <input type="submit" name="registrerBrukerKnapp" value="Registrer bruker">
-  <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
-</form>
+<body>
+    <body class="r-container-body">
+        <div class="r-container">
+    <form action="" id="registrerBrukerSkjema" name="registrerBrukerSkjema" method="post">
+        <div>
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="r-logo" alt="Studentsparing logo">
+        </div>
+    Brukernavn <input name="brukernavn" type="text" id="brukernavn" required> <br />
+    Passord <input name="passord" type="password" id="passord" required>  <br />
+    <input type="submit" name="registrerBrukerKnapp" value="Fortsett">
+    <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
+    </form>
+</div>
+</body>
 
 <?php
   if (isset($_POST ["registrerBrukerKnapp"]))

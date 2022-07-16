@@ -55,10 +55,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     padding-top: 0px;
+    padding-bottom: 20px;
     margin-top: 20px;
     margin-left: 40px;
-
 }
 
 .h-logo-i {
@@ -94,8 +95,12 @@ p {
 
 /*-------------------------MAIN CONTENT--------------------------------*/
 
+.m-body {
+    background-color: #FFF;
+}
+
 .m-container-login {
-    margin-top: 50px;
+    margin-top: 250px;
 
     display: flex;
     flex-direction: row;
@@ -104,22 +109,23 @@ p {
 }
 
 .m-login {
-    background-color:#f1f1f1;
+    background-color:#FFF;
     border: 1px solid;
-    padding-top: 39px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
 
-    margin-right: 10px;
-    border-radius: 5px;
+    margin-right: 20px;
+
+    border-color: #b9b9b9;
+
 }
 
 .m-login:hover {
     cursor: pointer;
     transition-timing-function: ease-in-out;
     transition: 0.2s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .m-login-overskrift {
@@ -133,27 +139,21 @@ p {
     text-align: center;
 }
 
-.m-login-bilde {
-    margin-top: 10px;
-    margin-left: 30px;
-}
-
 .m-registrer {
-    background-color:#f1f1f1;
+    background-color:#FFF;
     border: 1px solid;
-    padding-top: 25px;
-    padding-left: 72px;
-    padding-right: 72px;
-    padding-bottom: 45px;
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 100px;
 
-    border-radius: 5px;
+    margin-left: 20px;
+
+    border-color: #b9b9b9;
 }
 
 .m-registrer:hover {
     cursor: pointer;
-    transition-timing-function: ease-in-out;
-    transition: 0.2s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .m-registrer-overskrift:link {
@@ -166,30 +166,114 @@ p {
     text-align: center;
 }
 
-.m-registrer-bilde {
-    margin-top: 10px;
-    margin-left: 30px;
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------- innlogging.php ------------------------------*/
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+
+/*-------------------------Container setup--------------------------------*/
+.i-container-body {
+   height: 100%;
+   width: 100%;
+   margin-top: 145px;
+
+   background-color: #f1f1f1;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
 }
 
-.m-registrer-bilde {
-    margin-top: 10px;
+.i-container {
+    display: flex;
+    justify-content: center;
+
+    width: 450px;
+    height: 520px;
+
+    background-color:#FFF;
+    border: 1px solid;
+
+    border-color:rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    
 }
 
+/*-------------------------Innlogging--------------------------------*/
+
+.i-logo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*--------------------------- reg-bruker.php ------------------------------*/
 
+/*-------------------------MAIN CONTENT--------------------------------*/
 
-
-
-
-
-
-
-
+/*-------------------------Container setup--------------------------------*/
+.r-container-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 145px;
+ 
+    background-color: #f1f1f1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ 
+ .r-container {
+     display: flex;
+     justify-content: center;
+ 
+     width: 450px;
+     height: 520px;
+ 
+     background-color:#FFF;
+     border: 1px solid;
+ 
+     border-color:rgba(0, 0, 0, 0.1);
+     border-radius: 20px;
+ 
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+     
+ }
+ 
+ /*-------------------------Innlogging--------------------------------*/
+ 
+ .r-logo {
+     margin-top: 30px;
+     margin-bottom: 50px;
+ }
+ 
+ 
+ 
+ 
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-------------------------GRID SYSTEM UNDERSIDER--------------------------------*/
 

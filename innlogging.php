@@ -2,14 +2,19 @@
 /* trenger php tagger her for sjekk */
 ?>
 
-<h3>Innlogging </h3>
-
-<form action="" id="innloggingSkjema" name="innloggingSkjema" method="post">
-  Brukernavn <input name="brukernavn" type="text" id="brukernavn"> <br />
-  Passord <input name="passord" type="password" id="passord"  >  <br />
-  <input type="submit" name="logginnKnapp" value="Logg inn">
-  <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
+<body class="i-container-body">
+    <div class="i-container">
+    <form action="" id="innloggingSkjema" name="innloggingSkjema" method="post">
+        <div>
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="i-logo" alt="Studentsparing logo">
+        </div>
+            Brukernavn <input name="brukernavn" type="text" id="brukernavn"> <br />
+            Passord <input name="passord" type="password" id="passord"  >  <br />
+            <input type="submit" name="logginnKnapp" value="Fortsett">
+            <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
 </form>
+</div>
+</body>
 
 <?php
   if (isset($_POST ["logginnKnapp"]))
@@ -28,7 +33,7 @@
             session_start();
             $_SESSION["brukernavn"]=$brukernavn;
             $_SESSION["passord"]=$passord;
-            print("<meta http-equiv='refresh' content='0;url=index.php'>");
+            print("<meta http-equiv='refresh' content='0;url=økonomi.php'>");
         }
     }
 ?>

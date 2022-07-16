@@ -1,13 +1,3 @@
-<?php
-session_start();
-$innloggetBruker=$_SESSION["brukernavn"];
-
-if(!$innloggetBruker) /*bruker er ikke innlogget */
-    {
-        print("<meta http-equiv='refresh' content='0;url=index.php'>");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +8,11 @@ if(!$innloggetBruker) /*bruker er ikke innlogget */
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container-u">
-    <header class="header-u">
-    <div class="h-container-u">
+    <header class="header-i">
+    <div class="h-container-i">
         <div>
-            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo-u" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo-i" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
         </div>
     </div>
     </header>
+</body>
