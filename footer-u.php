@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer-u">
         <div>
             <div>
             <a href="utlogging.php">

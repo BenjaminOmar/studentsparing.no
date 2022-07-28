@@ -1,5 +1,5 @@
 <?php
-    include("header.php");
+    include("header-u.php");
 ?>
     <section class="main-content">
         <div class="startside">
@@ -34,5 +34,5 @@
 </html>
 
 <?php
-    include("footer.php");
+    include("footer-u.php");
 ?>

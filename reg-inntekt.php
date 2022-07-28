@@ -1,7 +1,7 @@
 <?php
-    include("header.php");
+    include("header-u.php");
 ?>
-    <section class="main-content">
+    <section class="main-content-u">
 
     <div class="reg-inntekt-container">
     <div class="reg-inntekt">
@@ -76,5 +76,5 @@
 </html>
 
 <?php
-    include("footer.php");
+    include("footer-u.php");
 ?>

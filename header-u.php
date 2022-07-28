@@ -4,7 +4,7 @@ $innloggetBruker=$_SESSION["brukernavn"];
 
 if(!$innloggetBruker) /*bruker er ikke innlogget */
     {
-        print("<meta http-equiv='refresh' content='0;url=innlogging.php'>");
+        print("<meta http-equiv='refresh' content='0;url=index.php'>");
     }
 ?>
 
@@ -21,20 +21,20 @@ if(!$innloggetBruker) /*bruker er ikke innlogget */
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <header class="header">
-    <div class="h-container">
+<div class="container-u">
+    <header class="header-u">
+    <div class="h-container-u">
         <div>
-            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="h-logo-u" alt="Studentsparing logo" onclick="location.href='økonomi.php';">
         </div>
         <div>
-            <a href="økonomi.php" class="h-hjem">hjem</a>
+            <a href="økonomi.php" class="h-hjem-u">hjem</a>
         </div>
         <div>
-            <a href="#" class="h-oversikt">oversikt</a>
+            <a href="#" class="h-oversikt-u">oversikt</a>
         </div>
         <div>
-            <a href="#" class="h-registrering">registrering</a>
+            <a href="#" class="h-registrering-u">registrering</a>
         </div>
     </div>
     </header>

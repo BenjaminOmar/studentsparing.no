@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrering</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
+    <body class="r-container-body">
+        <div class="r-container">
+    <form action="" id="registrerBrukerSkjema" name="registrerBrukerSkjema" method="post">
+        <div>
+            <img src="bilder/logo/Studentsparing-01-scaled.jpg" class="r-logo" alt="Studentsparing logo">
+        </div>
+        <div class="r-text-username">
+            Brukernavn
+        </div>
+                <input class="r-box-username" name="brukernavn" type="text" id="brukernavn" required> <br />
+        <div class="r-text-password">
+            Passord
+        </div>
+            <input class="r-box-password" name="passord" type="password" id="passord" required>  <br />
+        <div class="r-buttons">
+            <input class="r-button-p" type="submit" name="registrerBrukerKnapp" value="Fortsett">
+            <input class="r-button-r" type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
+        </div>
+    </form>
+</div>
 </body>
-</html>
-
-<h3>Registrer bruker </h3>
-
-<form action="" id="registrerBrukerSkjema" name="registrerBrukerSkjema" method="post">
-  Brukernavn <input name="brukernavn" type="text" id="brukernavn" required> <br />
-  Passord <input name="passord" type="password" id="passord" required>  <br />
-  <input type="submit" name="registrerBrukerKnapp" value="Registrer bruker">
-  <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
-</form>
 
 <?php
   if (isset($_POST ["registrerBrukerKnapp"]))

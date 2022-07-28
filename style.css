@@ -4,41 +4,23 @@
 
 }
 
-h1 {
+h1, h2, h3, h4, p {
     font-family: 'Quicksand', sans-serif;
 }
 
-h2 {
-    font-family: 'Quicksand', sans-serif;
-}
+/*-------------------------GRID SYSTEM INNLOGGING--------------------------------*/
 
-h3 {
-    font-family: 'Quicksand', sans-serif;
-}
-
-h4 {
-    font-family: 'Quicksand', sans-serif;
-}
-
-p {
-    font-family: 'Quicksand', sans-serif;
-}
-
-
-
-/*-------------------------GRID SYSTEM--------------------------------*/
-
-.container{
+.container-i{
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-rows: 80px 1fr 0px;
 }
 
 /*-------------------------HEADER--------------------------------*/
 
-.header {
+.header-i {
     background-color: #FFF;
     
     grid-row: 1 / span 1;
@@ -52,7 +34,425 @@ p {
 }
 
 /*------ HEADER INNHOLD ------*/
-.h-container {
+
+.h-container-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.h-logo-i {
+    cursor: pointer;
+}
+
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+
+.main-content-i {
+    background-color: #FFF;
+
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    
+    margin-top: 0px;
+}
+
+/*-------------------------FOOTER--------------------------------*/
+
+.footer-i {
+    background-color: #FFF;
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------- index.php ------------------------------*/
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+
+.m-body {
+    background-color: #FFF;
+}
+
+.m-container-login {
+    margin-top: 250px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-login {
+    background-color:#FFF;
+    border: 1px solid;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+
+    margin-right: 20px;
+
+    border-color: #b9b9b9;
+
+}
+
+.m-login:hover {
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+
+.m-login-overskrift {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.m-login-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.m-registrer {
+    background-color:#FFF;
+    border: 1px solid;
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+
+    margin-left: 20px;
+
+    border-color: #b9b9b9;
+}
+
+.m-registrer:hover {
+    cursor: pointer;
+}
+
+.m-registrer-overskrift:link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.m-registrer-text {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------- innlogging.php ------------------------------*/
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+
+/*-------------------------Container setup--------------------------------*/
+.i-container-body {
+   height: 100%;
+   width: 100%;
+   margin-top: 110px;
+
+   background-color: #f1f1f1;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.i-container {
+    display: flex;
+    justify-content: center;
+
+    width: 450px;
+    height: 520px;
+
+    background-color:#FFF;
+    border: 1px solid;
+
+    border-color:rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    
+}
+
+/*-------------------------Innlogging--------------------------------*/
+
+.i-logo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.i-text-username {
+    margin-bottom: 3px;
+ }
+
+ .i-text-password {
+    margin-top: 20px;
+    margin-bottom: 3px;
+ }
+ 
+ .i-box-username {
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid #a9a9a9;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+ }
+
+ .i-box-password {
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid #a9a9a9;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+ }
+
+ .i-buttons {
+    margin-top: 20px;
+    margin-left: 0px;
+ }
+
+ .i-button-p {
+    background-color: #FFFFFF;
+    border: 1px solid #a9a9a9;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+
+ .i-button-r {
+    background-color: #FFFFFF;
+    border: 1px solid #a9a9a9;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------- reg-bruker.php ------------------------------*/
+
+/*-------------------------MAIN CONTENT--------------------------------*/
+
+/*-------------------------Container setup--------------------------------*/
+.r-container-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 110px;
+ 
+    background-color: #f1f1f1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ 
+ .r-container {
+     display: flex;
+     justify-content: center;
+ 
+     width: 450px;
+     height: 520px;
+ 
+     background-color:#FFF;
+     border: 1px solid;
+ 
+     border-color:rgba(0, 0, 0, 0.1);
+     border-radius: 20px;
+ 
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+     
+ }
+ 
+ /*-------------------------Registrering--------------------------------*/
+ 
+ .r-logo {
+     margin-top: 30px;
+     margin-bottom: 50px;
+ }
+
+ .r-text-username {
+    margin-bottom: 3px;
+ }
+
+ .r-text-password {
+    margin-top: 20px;
+    margin-bottom: 3px;
+ }
+ 
+ .r-box-username {
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid #a9a9a9;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+ }
+
+ .r-box-password {
+    font-size: large;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 62px;
+
+    border: 1px solid #a9a9a9;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+ }
+
+ .r-buttons {
+    margin-top: 20px;
+    margin-left: 0px;
+ }
+
+ .r-button-p {
+    background-color: #FFFFFF;
+    border: 1px solid #a9a9a9;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+
+ .r-button-r {
+    background-color: #FFFFFF;
+    border: 1px solid #a9a9a9;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+ 
+ 
+ 
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------GRID SYSTEM UNDERSIDER--------------------------------*/
+
+.container-u{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+/*-------------------------HEADER--------------------------------*/
+
+.header-u {
+    background-color: #FFF;
+    
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+
+    border-style: hidden hidden solid hidden;
+    border-color: #bebebe;
+    border-width: thin;
+
+ 
+}
+
+/*------ HEADER INNHOLD ------*/
+.h-container-u {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -62,13 +462,13 @@ p {
 
 }
 
-.h-logo {
+.h-logo-u {
     cursor: pointer;
 }
 
 /* -- knapper -- */
 
-.h-hjem {
+.h-hjem-u {
     margin-left: 110px;
     margin-right: 50px;
     
@@ -81,7 +481,7 @@ p {
     position: relative;
 }
 
-.h-hjem:after {
+.h-hjem-u:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -94,12 +494,12 @@ p {
     transition: transform 0.25s ease-out;
 }
 
-.h-hjem:hover:after {
+.h-hjem-u:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.h-oversikt {
+.h-oversikt-u {
     padding-left: 0px;
     padding-right: 0px;
 
@@ -115,7 +515,7 @@ p {
     position: relative;
 }
 
-.h-oversikt:after {
+.h-oversikt-u:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -128,12 +528,12 @@ p {
     transition: transform 0.25s ease-out;
 }
 
-.h-oversikt:hover:after {
+.h-oversikt-u:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.h-registrering {
+.h-registrering-u {
     padding-left: 0px;
     padding-right: 0px;
 
@@ -149,7 +549,7 @@ p {
     position: relative;
 }
 
-.h-registrering:after {
+.h-registrering-u:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -162,7 +562,7 @@ p {
     transition: transform 0.25s ease-out;
 }
 
-.h-registrering:hover:after {
+.h-registrering-u:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -171,11 +571,9 @@ p {
    
 
 
-
-
 /*-------------------------MAIN CONTENT--------------------------------*/
 
-.main-content {
+.main-content-u {
     background-color: #FFF;
 
     grid-row: 2 / span 1;
@@ -186,7 +584,7 @@ p {
 
 /*-------------------------FOOTER--------------------------------*/
 
-.footer {
+.footer-u {
     background-color: #FFF;
     grid-row: 3 / span 1;
     grid-column: 1 / span 3;
@@ -206,9 +604,30 @@ p {
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+/*--------------------------- innlogging.php ------------------------------*/
 
 
-/*--------------------------- økonomi.php side------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------- index.php ------------------------------*/
+
+/* logo */
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------- økonomi.php ------------------------------*/
 
 /*-------------------------MAIN CONTENT--------------------------------*/
 
@@ -432,9 +851,7 @@ p {
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*--------------------------- reg-inntekt.php side------------------------------*/
-
-
+/*--------------------------- reg-inntekt.php ------------------------------*/
 
 
 /*-------------------------MAIN CONTENT--------------------------------*/
@@ -663,13 +1080,3 @@ p {
     color: rgba(0, 0, 0, 0.85);
   }
   
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*--------------------------- reg-inntekt.php side------------------------------*/
-
-
-/*-------------------------MAIN CONTENT--------------------------------*/
